@@ -1,8 +1,12 @@
 import { useEffect, useCallback, useState } from 'react'
 import styled from 'styled-components'
+import Button from './button'
 
 const ProfileStyled = styled.div`
   grid-area: profile;
+  .custom {
+
+  }
   .avatar {
     border-radius: 50%;
     border: 1px solid var(--grey-1);
@@ -71,8 +75,11 @@ function Profile() {
       <p className="name">{name}</p>
       <p className="username">{login}</p>
       <div className="buttons">
-        <button>Follow</button>
-        <button>sponsors</button>
+        <Button
+          text="Follow"
+          link="#"
+          icon={<i>ho</i>}
+        />
       </div>
       <p className="bio info">
         {bio}
