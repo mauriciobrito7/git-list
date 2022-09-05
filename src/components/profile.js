@@ -1,6 +1,7 @@
 import { useEffect, useCallback, useState } from 'react'
 import styled from 'styled-components'
 import Button from './button'
+import Icon from './icon'
 
 const ProfileStyled = styled.div`
   grid-area: profile;
